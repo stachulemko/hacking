@@ -11,7 +11,7 @@ combination_lengths = [1, 2, 3]
 for length in combination_lengths:
     combinations = list(product(elements, repeat=length))
     # all_combinations.append(combinations)
-    with open('c:\\tmp\\not_ready.txt', 'r') as file:
+    with open('C:\\tmp\\not_ready.txt', 'a') as file:
         file.write(f"{combinations}")
 
 # Wyświetlenie wszystkich kombinacji
