@@ -93,7 +93,7 @@ def register_and_check_email_availability(emails):
             By.XPATH, "//div[@class='sc-bcXHqe ErrorContainer-sc-1hxvmp0-0 bHXXMt kAINnj NewEmailUserDataStep___StyledCustomErrorMessage-sc-nhf5cz-1 gfMenV']")
         # print(x)
         if x.text == "Podany login jest już zajęty":
-            with open('ready.txt', 'w') as file:
+            with open('c:\\tmp\\ready.txt', 'w') as file:
                 file.write(f"{email}")
         # print(x.text)
 
@@ -103,6 +103,6 @@ def register_and_check_email_availability(emails):
     #    return True  # Adres e-mail istnieje
 
 
-with open('not_ready.txt', 'r') as file:
+with open('c:\\tmp\\not_ready.txt', 'r') as file:
     email_to_check = [file]
 register_and_check_email_availability(email_to_check)
